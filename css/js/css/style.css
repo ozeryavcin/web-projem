@@ -1,0 +1,172 @@
+/* ============================================================
+   GENEL AYARLAR VE STICKY FOOTER (Tüm Sayfalar İçin)
+   ============================================================ */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+main {
+    flex: 1 0 auto; /* İçerik az olsa bile footer'ı aşağı iter */
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* ============================================================
+   HAKKINDA (İNDEX) - PROFİL RESMİ VE HERO BÖLÜMÜ
+   ============================================================ */
+.hero-wrapper {
+    background-color: #ffffff;
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Resim Kafesi: Resmin boyutu ne olursa olsun bu alanı geçemez */
+.profile-avatar-circle {
+    width: 280px !important;
+    height: 280px !important;
+    margin: 0 auto !important;
+    border-radius: 50% !important; /* Tam daire */
+    overflow: hidden !important; /* Dışarı taşan her şeyi gizler */
+    border: 8px solid #fff !important;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.profile-avatar-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Resmi yamultmadan sığdırır */
+    display: block !important;
+}
+
+.about-text-content {
+    padding-left: 30px;
+}
+
+.stat-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================================================
+   ŞEHRİM (ANKARA) - SLIDER VE BAŞLIK
+   ============================================================ */
+.sehir-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/sehir1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+#sehirCarousel img {
+    height: 550px; /* Slider yüksekliği sabitlendi */
+    object-fit: cover;
+}
+
+.section-title {
+    border-left: 5px solid #dc3545;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* ============================================================
+   MİRASIMIZ (EFES) - KARTLAR
+   ============================================================ */
+.miras-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+}
+
+.miras-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.miras-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.unesco-badge {
+    background-color: #0077d4;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ============================================================
+   İLGİ ALANLARIM - İKONLAR VE GRADIENT
+   ============================================================ */
+.interest-card {
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.interest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-bottom: 4px solid #dc3545;
+}
+
+.interest-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.gs-gradient {
+    background: linear-gradient(45deg, #A90432, #FDB912);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+   RESPONSIVE (MOBİL) AYARLAR
+   ============================================================ */
+@media (max-width: 991px) {
+    .about-text-content {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    
+    #sehirCarousel img {
+        height: 350px;
+    }
+}
