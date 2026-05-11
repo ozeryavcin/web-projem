@@ -30,7 +30,9 @@
         <div class="container py-5">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <i class="bi bi-person-circle display-1 text-danger mb-3"></i>
+                    <div class="profile-avatar-circle mb-4">
+                        <img src="img/profil3.jpg" alt="Özer Yavçın">
+                     </div>
                     <h5 class="text-danger fw-bold text-uppercase ls-1">Merhaba, Ben</h5>
                     <h1 class="display-2 fw-bold text-dark mb-3">Özer Yavçın</h1>
                     <h4 class="text-muted fw-normal mb-4">Sakarya Üniversitesi | Bilgisayar Mühendisliği Öğrencisi</h4>

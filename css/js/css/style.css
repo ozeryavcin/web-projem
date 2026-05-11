@@ -1,5 +1,5 @@
 /* ============================================================
-   GENEL AYARLAR VE STICKY FOOTER (Tüm Sayfalar İçin)
+   GENEL AYARLAR VE STICKY FOOTER
    ============================================================ */
 html, body {
     height: 100%;
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    flex: 1 0 auto; /* İçerik az olsa bile footer'ı aşağı iter */
+    flex: 1 0 auto;
 }
 
 footer {
@@ -27,7 +27,7 @@ footer {
 }
 
 /* ============================================================
-   HAKKINDA (İNDEX) - PROFİL RESMİ VE HERO BÖLÜMÜ
+   HAKKINDA (İNDEX) - PROFİL RESMİ
    ============================================================ */
 .hero-wrapper {
     background-color: #ffffff;
@@ -35,13 +35,12 @@ footer {
     border-bottom: 1px solid #eee;
 }
 
-/* Resim Kafesi: Resmin boyutu ne olursa olsun bu alanı geçemez */
 .profile-avatar-circle {
     width: 280px !important;
     height: 280px !important;
     margin: 0 auto !important;
-    border-radius: 50% !important; /* Tam daire */
-    overflow: hidden !important; /* Dışarı taşan her şeyi gizler */
+    border-radius: 50% !important;
+    overflow: hidden !important;
     border: 8px solid #fff !important;
     box-shadow: 0 15px 45px rgba(0,0,0,0.15) !important;
     display: flex !important;
@@ -52,83 +51,12 @@ footer {
 .profile-avatar-circle img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Resmi yamultmadan sığdırır */
+    object-fit: cover !important;
     display: block !important;
 }
 
-.about-text-content {
-    padding-left: 30px;
-}
-
-.stat-box {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
-}
-
-.stat-box:hover {
-    transform: translateY(-5px);
-}
-
 /* ============================================================
-   ŞEHRİM (ANKARA) - SLIDER VE BAŞLIK
-   ============================================================ */
-.sehir-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/sehir1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 80px 0;
-    margin-bottom: 40px;
-}
-
-#sehirCarousel img {
-    height: 550px; /* Slider yüksekliği sabitlendi */
-    object-fit: cover;
-}
-
-.section-title {
-    border-left: 5px solid #dc3545;
-    padding-left: 15px;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-/* ============================================================
-   MİRASIMIZ (EFES) - KARTLAR
-   ============================================================ */
-.miras-card {
-    border: none;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    background-color: #ffffff;
-}
-
-.miras-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-.miras-img {
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.unesco-badge {
-    background-color: #0077d4;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-/* ============================================================
-   İLGİ ALANLARIM - İKONLAR VE GRADIENT
+   İLGİ ALANLARIM - KARTLAR VE EFEKTLER
    ============================================================ */
 .interest-card {
     border: none;
@@ -156,6 +84,43 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+/* --- Sinema ve Kitap Bölümü Görsel Sabitleme --- */
+.media-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.media-img-wrapper {
+    width: 100%;
+    height: 400px; /* Poster boylarını eşitledik */
+    overflow: hidden;
+}
+
+.media-img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover; /* Resmi kutuya sığdırır, taşırmaz */
+    transition: 0.5s;
+}
+
+.media-card:hover .media-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.object-fit-cover {
+    object-fit: cover !important;
+}
+
+/* Kartların içindeki resimlerin esnemesini önleyen ek güvenlik */
+.media-card img {
+    display: block;
+    max-width: 100%;
+}
+
 /* ============================================================
    RESPONSIVE (MOBİL) AYARLAR
    ============================================================ */
@@ -165,8 +130,7 @@ footer {
         padding-left: 0;
         margin-top: 40px;
     }
-    
-    #sehirCarousel img {
-        height: 350px;
+    .media-img-wrapper {
+        height: 300px;
     }
 }

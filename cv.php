@@ -25,7 +25,7 @@
                     <h3 class="h5">Sakarya Üniversitesi</h3>
                     <p class="text-muted mb-1">Bilgisayar Mühendisliği (Lisans)</p>
                     <p><strong>Dönem:</strong> 2024 - Devam Ediyor</p>
-                    <p><strong>Genel Not Ortalaması (GNO):</strong> 3.54 / 4.00</p>
+                    <p><strong>Genel Not Ortalaması (GNO):</strong> ... / 4.00</p>
                 </div>
             </article>
 
@@ -33,7 +33,7 @@
                 <div class="card-body">
                     <h3 class="h5">İngilizce Hazırlık Eğitimi</h3>
                     <p class="text-muted mb-1">Sakarya Üniversitesi Yabancı Diller Yüksekokulu</p>
-                    <p><strong>Başarı Notu:</strong> 82</p>
+                    <p><strong>Başarı Notu:</strong> ...</p>
                     <p>Hazırlık yılını başarıyla tamamlayarak lisans eğitimine geçiş yapıldı.</p>
                 </div>
             </article>
