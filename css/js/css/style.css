@@ -1,5 +1,5 @@
 /* ============================================================
-   GENEL AYARLAR VE STICKY FOOTER
+   1. GENEL AYARLAR VE YAPI (STICKY FOOTER)
    ============================================================ */
 html, body {
     height: 100%;
@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f7f6;
+    background-color: #f4f7f6; /* Soft arka plan */
     color: #333;
 }
 
@@ -27,7 +27,7 @@ footer {
 }
 
 /* ============================================================
-   HAKKINDA (İNDEX) - PROFİL RESMİ
+   2. HAKKINDA (INDEX) SAYFASI - KAHRAMAN ALANI
    ============================================================ */
 .hero-wrapper {
     background-color: #ffffff;
@@ -56,7 +56,7 @@ footer {
 }
 
 /* ============================================================
-   İLGİ ALANLARIM - KARTLAR VE EFEKTLER
+   3. İLGI ALANLARIM - ANA KARTLAR VE GRADIENTLER
    ============================================================ */
 .interest-card {
     border: none;
@@ -69,7 +69,7 @@ footer {
 .interest-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-    border-bottom: 4px solid #dc3545;
+    border-bottom: 4px solid #dc3545; /* GS Kırmızısı vurgusu */
 }
 
 .interest-icon {
@@ -82,55 +82,96 @@ footer {
     background: linear-gradient(45deg, #A90432, #FDB912);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
-/* --- Sinema ve Kitap Bölümü Görsel Sabitleme --- */
+/* ============================================================
+   4. API BÖLÜMÜ (TMDb) VE MEDYA KARTLARI
+   ============================================================ */
+.api-section-header {
+    border-left: 6px solid #e50914; /* Sinematik kırmızı vurgu */
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
 .media-card {
     border: none;
     border-radius: 20px;
     overflow: hidden;
     background: #fff;
-    transition: 0.4s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.media-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .media-img-wrapper {
     width: 100%;
-    height: 400px; /* Poster boylarını eşitledik */
+    height: 400px; /* Sinema odası ve API afişleri için sabit boy */
     overflow: hidden;
+    position: relative;
 }
 
 .media-img-wrapper img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover; /* Resmi kutuya sığdırır, taşırmaz */
-    transition: 0.5s;
+    object-fit: cover !important;
+    transition: 0.5s ease;
 }
 
 .media-card:hover .media-img-wrapper img {
     transform: scale(1.1);
 }
 
-.object-fit-cover {
-    object-fit: cover !important;
-}
-
-/* Kartların içindeki resimlerin esnemesini önleyen ek güvenlik */
-.media-card img {
-    display: block;
-    max-width: 100%;
+/* Okuma Köşesi İçin Yatay Kitap Kartı Düzenlemesi */
+.book-card-img {
+    width: 120px;
+    height: 180px;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 /* ============================================================
-   RESPONSIVE (MOBİL) AYARLAR
+   5. İLETİŞİM SAYFASI - FORM ÖZELLİKLERİ
+   ============================================================ */
+.contact-form-wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25 r em rgba(220, 53, 69, 0.25);
+}
+
+/* ============================================================
+   6. RESPONSIVE (MOBİL) AYARLAR
    ============================================================ */
 @media (max-width: 991px) {
+    .hero-wrapper {
+        padding: 50px 0;
+    }
+    
     .about-text-content {
         text-align: center;
-        padding-left: 0;
-        margin-top: 40px;
+        padding: 20px;
     }
+
     .media-img-wrapper {
-        height: 300px;
+        height: 300px; /* Mobilde poster boyunu küçültüyoruz */
     }
+
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Yardımcı Sınıf */
+.object-fit-cover {
+    object-fit: cover !important;
 }
