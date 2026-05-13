@@ -5,38 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Özer Yavçın | Şehrim - Ankara</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigasyon -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.php">Özer Yavçın</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.php">Hakkında</a></li>
                     <li class="nav-item"><a class="nav-link" href="cv.php">Özgeçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="sehrim.php">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="sehrim.php">Şehrim</a></li>
                     <li class="nav-item"><a class="nav-link" href="mirasimiz.php">Mirasımız</a></li>
                     <li class="nav-item"><a class="nav-link" href="ilgialanlarim.php">İlgi Alanlarım</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.php">İletişim</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-danger btn-sm rounded-pill px-3" href="login.php">Giriş Yap</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Üst Başlık Alanı -->
     <header class="sehir-header text-center">
         <div class="container">
             <h1 class="display-2 fw-bold">ANKARA</h1>
-            <p class="lead fs-3">Bozkırın Ortasında Yükselen Cumhuriyet Müjdesi</p>
+            <p class="lead fs-3">Bozkırın Ortasında Yükselen Cumhuriyet İncisi</p>
         </div>
     </header>
 
     <main class="container">
         
-        <!-- Fotoğraf Galerisi (Slider) -->
         <section id="galeri" class="mb-5">
             <h2 class="section-title">Şehir Galerisi</h2>
             <div id="sehirCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
@@ -93,9 +97,7 @@
             </div>
         </section>
 
-        <!-- İçerik Alanı -->
         <div class="row g-4 mb-5">
-            <!-- İsim Kökeni -->
             <div class="col-md-6">
                 <div class="card h-100 info-card p-4">
                     <h3 class="text-danger">İsmi Nereden Geliyor?</h3>
@@ -103,7 +105,6 @@
                 </div>
             </div>
 
-            <!-- Tarihçe -->
             <div class="col-md-6">
                 <div class="card h-100 info-card p-4">
                     <h3 class="text-danger">Kısa Tarihçesi</h3>
@@ -111,7 +112,6 @@
                 </div>
             </div>
 
-            <!-- Yemek Kültürü -->
             <div class="col-md-6">
                 <div class="card h-100 info-card p-4">
                     <h3 class="text-danger">Ne Yenir? (Gastronomi)</h3>
@@ -123,7 +123,6 @@
                 </div>
             </div>
 
-            <!-- Futbol Takımları -->
             <div class="col-md-6">
                 <div class="card h-100 info-card p-4">
                     <h3 class="text-danger">Futbol ve Spor</h3>

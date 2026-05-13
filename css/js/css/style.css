@@ -146,7 +146,7 @@ footer {
 
 .form-control:focus, .form-select:focus {
     border-color: #dc3545;
-    box-shadow: 0 0 0 0.25 r em rgba(220, 53, 69, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
 /* ============================================================
@@ -174,4 +174,108 @@ footer {
 /* Yardımcı Sınıf */
 .object-fit-cover {
     object-fit: cover !important;
+}
+
+/* ============================================================
+   7. MİRASIMIZ (GORDION) ÖZEL STİLLERİ
+   ============================================================ */
+.heritage-hero {
+    /* Arka plan resmin eğer çok açıksa veya yüklenmiyorsa yazılar siyah olsun */
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../img/miras4.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212529 !important; /* Yazıyı tam siyah değil, şık bir koyu gri yapar */
+}
+
+/* Alt başlıktaki solukluğu gidermek için */
+.heritage-hero p.fs-3 {
+    opacity: 1 !important;
+    color: #495057;
+}
+
+.carousel-img {
+    height: 550px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #dc3545;
+    margin: 15px 0;
+}
+
+.heritage-card {
+    background: #020000;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 8px solid #dc3545;
+}
+
+.img-frame {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 320px;
+    }
+    .heritage-hero {
+        min-height: 300px;
+    }
+}
+
+/* ============================================================
+   8. LOGIN SAYFASI ÖZEL TASARIMI
+   ============================================================ */
+.login-container {
+    min-height: calc(100vh - 150px); /* Navbar ve Footer hariç alanı doldurur */
+    background: linear-gradient(135deg, #f4f7f6 0%, #e9ecef 100%);
+}
+
+.login-card {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.login-header {
+    border-bottom: 5px solid #dc3545;
+}
+
+.input-group-text {
+    border-radius: 12px 0 0 12px;
+}
+
+.login-card .form-control {
+    border-radius: 0 12px 12px 0;
+    padding: 12px;
+}
+
+.login-card .form-control:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+    background-color: #fff;
+}
+
+.btn-danger {
+    border-radius: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #a90432;
+    transform: scale(1.02);
 }

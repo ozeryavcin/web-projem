@@ -17,13 +17,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.php">Hakkında</a></li>
                     <li class="nav-item"><a class="nav-link" href="cv.php">Özgeçmiş</a></li>
                     <li class="nav-item"><a class="nav-link" href="sehrim.php">Şehrim</a></li>
                     <li class="nav-item"><a class="nav-link" href="mirasimiz.php">Mirasımız</a></li>
                     <li class="nav-item"><a class="nav-link active fw-bold" href="ilgialanlarim.php">İlgi Alanlarım</a></li>
                     <li class="nav-item"><a class="nav-link" href="iletisim.php">İletişim</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-danger btn-sm rounded-pill px-3" href="login.php">Giriş Yap</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -155,7 +158,7 @@
         </section>
 
         <section class="pt-5 mt-5 border-top">
-            <h2 class="fw-bold mb-4"><i class="bi bi-book me-2"></i>Okuma Köşesi</h2>
+            <h2 class="fw-bold mb-4"><i class="bi bi-book me-2"></i>Favori Okuma Köşem</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="media-card shadow d-flex align-items-center">

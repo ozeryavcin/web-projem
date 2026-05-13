@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Özer Yavcin | Özgeçmiş</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.php">Özer Yavçın</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cv.php">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.php">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.php">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.php">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.php">İletişim</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-danger btn-sm rounded-pill px-3" href="login.php">Giriş Yap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="bg-dark text-white py-5 shadow">
         <div class="container text-center">
             <h1 class="display-3">Özgeçmiş</h1>
