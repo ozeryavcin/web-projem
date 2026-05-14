@@ -43,21 +43,21 @@
                 <div class="card h-100 interest-card shadow-sm p-4 text-center">
                     <div class="interest-icon text-primary"><i class="bi bi-code-slash"></i></div>
                     <h3 class="fw-bold">Yazılım Geliştirme</h3>
-                    <p class="text-secondary">C++, C# ve Web teknolojileri üzerinde çalışıyorum. Algoritma kurmak benim için bir tutku.</p>
+                    <p class="text-secondary">C++, C# ve Web teknolojileri üzerinde çalışıyorum. Algoritma kurmayı seviyorum.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 interest-card shadow-sm p-4 text-center">
                     <div class="interest-icon text-info"><i class="bi bi-film"></i></div>
                     <h3 class="fw-bold">Sinema Sanatı</h3>
-                    <p class="text-secondary">Christopher Nolan ve David Lynch sinemasına hayranım. Bilim kurgu kurgularını seviyorum.</p>
+                    <p class="text-secondary">Christopher Nolan ve David Lynch sinemasına hayranım. Bilim kurguyu seviyorum.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 interest-card shadow-sm p-4 text-center">
                     <div class="interest-icon text-danger"><i class="bi bi-star-fill"></i></div>
                     <h3 class="fw-bold gs-gradient">Galatasaray & Futbol</h3>
-                    <p class="text-secondary">Galatasaray'ın başarılarını ve UEFA sıralamalarını takip ediyorum. Stratejik düşünme yapımı besliyor.</p>
+                    <p class="text-secondary">Galatasaray'ın başarılarını ve UEFA sıralamalarını takip ediyorum.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -71,7 +71,7 @@
                 <div class="card h-100 interest-card shadow-sm p-4 text-center">
                     <div class="interest-icon text-success"><i class="bi bi-heart-pulse"></i></div>
                     <h3 class="fw-bold">Fitness & Disiplin</h3>
-                    <p class="text-secondary">Düzenli antrenman ve disiplin en önemli unsurlardan biri. Zihinsel denge sağlıyorum.</p>
+                    <p class="text-secondary">Düzenli antrenman ve disiplin en önemli unsurlardan biri. Zihinsel denge sağlıyor.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -149,8 +149,9 @@
                             <h5 class="fw-bold mb-2">Fight Club</h5>
                             <div class="d-grid gap-2">
                                 <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#fightModal">Fragman</button>
-                                <a href="https://letterboxd.com/Ozbuyucusu123/" target="_blank" class="btn btn-sm btn-dark">Letterboxd</a>
+                                <a href="https://tr.wikipedia.org/wiki/D%C3%B6v%C3%BC%C5%9F_Kul%C3%BCb%C3%BC_(film)" target="_blank" class="btn btn-sm btn-outline-dark">Bilgi</a>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -184,7 +185,7 @@
                     <div class="media-card shadow d-flex align-items-center">
                         <div style="width: 120px; height: 180px; flex-shrink: 0;"><img src="img/doriangrayinportresi.jpg" class="w-100 h-100 object-fit-cover" alt="Dorian Gray"></div>
                         <div class="p-3">
-                            <h6 class="fw-bold mb-1 text-truncate">Dorian Gray</h6>
+                            <h6 class="fw-bold mb-1 text-truncate">Dorian Gray'in Portresi</h6>
                             <small class="text-muted d-block mb-2">Oscar Wilde</small>
                             <a href="https://tr.wikipedia.org/wiki/Dorian_Gray%27in_Portresi" target="_blank" class="btn btn-sm btn-outline-primary">İncele</a>
                         </div>

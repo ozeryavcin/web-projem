@@ -55,7 +55,7 @@
                 <div class="card-body">
                     <h3 class="h5">İngilizce Hazırlık Eğitimi</h3>
                     <p class="text-muted mb-1">Sakarya Üniversitesi Yabancı Diller Yüksekokulu</p>
-                    <p><strong>Başarı Notu:</strong> ...</p>
+                    <p><strong>Başarı Notu:</strong> .../ 100</p>
                     <p>Hazırlık yılını başarıyla tamamlayarak lisans eğitimine geçiş yapıldı.</p>
                 </div>
             </article>
@@ -69,7 +69,7 @@
                         C++ / C# <span class="badge bg-primary rounded-pill">Başlangıç/Orta</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Web Teknolojileri (HTML, CSS, JS) <span class="badge bg-success rounded-pill">İleri</span>
+                        Web Teknolojileri (HTML, CSS, JS) <span class="badge bg-success rounded-pill">öğreniliyor</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         PHP & MySQL <span class="badge bg-warning text-dark rounded-pill">Öğreniliyor</span>

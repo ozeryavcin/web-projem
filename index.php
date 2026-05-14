@@ -45,7 +45,7 @@
                     <hr class="w-25 mx-auto border-danger border-2 mb-4">
                     <p class="lead text-secondary fs-4 px-lg-5">
                         2024 yılında Sakarya Üniversitesi Bilgisayar Mühendisliği bölümüne adım atarak teknoloji dünyasındaki yolculuğuma başladım. 
-                        Disiplini ve sürekli gelişimi pusula edinen bir mühendis adayı olarak, karmaşık sistemleri anlamak ve yenilikçi çözümler üretmek üzerine çalışıyorum.
+                        Disiplini ve sürekli gelişimi pusula edinen bir mühendis adayı olarak, karmaşık sistemleri anlamak ve çözümler üretmeyi seviyorum.
                     </p>
                 </div>
             </div>

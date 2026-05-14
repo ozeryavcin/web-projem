@@ -188,7 +188,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #212529 !important; /* Yazıyı tam siyah değil, şık bir koyu gri yapar */
+    color: #212529 !important; /* Yazıyı tam siyah değil, koyu gri yapar */
 }
 
 /* Alt başlıktaki solukluğu gidermek için */

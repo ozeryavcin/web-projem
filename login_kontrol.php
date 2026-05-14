@@ -1,5 +1,4 @@
 <?php
-// Kullanıcı adı senin istediğin adrese göre güncellendi
 $dogru_email = "ozer.yavcin@ogr.sakarya.edu.tr";
 $dogru_sifre = "b241210035";
 

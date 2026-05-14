@@ -122,7 +122,7 @@
             },
             methods: {
                 validateVue: function() {
-                    // .trim() eklenerek boşluk hatası çözüldü
+                    // .trim() eklenerek boşluk hatası çözülmesi için
                     const email = this.formData.email.trim();
                     const telefon = this.formData.telefon.trim();
                     
